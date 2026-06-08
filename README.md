@@ -1,6 +1,14 @@
-# 🔍 PortScanner
+# 🔍 Port Scan
 
 A fast, multi-threaded TCP/UDP port scanner written in Python — with service version detection, OS fingerprinting, banner grabbing, and structured export. Built as a hands-on demonstration of socket programming, TCP/IP fundamentals, and penetration testing recon techniques.
+
+---
+
+## Sample Output
+
+
+![Port Scanner Scan Output](assets/scan_output.png)
+
 
 ---
 
@@ -32,8 +40,8 @@ python --version   # confirm 3.10+
 ## Installation
 
 ```bash
-git clone https://github.com/ameya/port-scanner.git
-cd port-scanner
+git clone https://github.com/Ameya343/Port-Scanner.git
+cd Port-Scanner
 ```
 
 That's it. No `pip install` needed.
@@ -45,6 +53,12 @@ That's it. No `pip install` needed.
 ```
 python port_scanner.py -t <target> [options]
 ```
+
+
+
+![Help Menu](assets/help_menu.png)
+
+
 
 ### Options
 
@@ -84,33 +98,6 @@ sudo python port_scanner.py -t 10.10.10.1 -p 53,161,500 --udp -v
 
 # Targeted recon with banner + version
 python port_scanner.py -t 192.168.1.1 -p 22,80,443,8080 -sV --banner
-```
-
----
-
-## Sample Output
-
-```
-  Target   : 10.10.10.1 (10.10.10.1)
-  Ports    : 1024 ports [1–1024]
-  Flags    : version os
-  Threads  : 100   Timeout: 1.5s
-  Started  : 2025-06-09 14:22:01
-
-  PROTO    PORT     STATE          SERVICE          VERSION
-  ──────────────────────────────────────────────────────────────────────
-  [TCP] :22     open           SSH              SSH 2.0 / OpenSSH_8.9p1
-  [TCP] :80     open           HTTP             nginx/1.24.0
-  [TCP] :443    open           HTTPS            Apache/2.4.57
-  [TCP] :3306   open           MySQL            MySQL 8.0.33
-  [TCP] :6379   open           Redis            Redis 7.0.11
-
-  ──────────────────────────────────────────────────────────────────────
-  Scan complete in 3.41s
-  5 open  |  0 open|filtered  |  1019 closed
-
-  [OS Fingerprint]
-  Linux / Android / macOS (TTL 64–128) (TTL=64)
 ```
 
 ---
@@ -198,3 +185,6 @@ This tool is intended for **authorised security testing and educational use only
 ## License
 
 MIT License — see [LICENSE](https://github.com/Ameya343/Port-Scanner/blob/main/LICENSE) for details.
+
+## Author
+[Ameya343](https://github.com/Ameya343/) (Ameya Ingole)
