@@ -1,4 +1,4 @@
-# 🔍 PyPortScan
+# 🔍 PortScanner
 
 A fast, multi-threaded TCP/UDP port scanner written in Python — with service version detection, OS fingerprinting, banner grabbing, and structured export. Built as a hands-on demonstration of socket programming, TCP/IP fundamentals, and penetration testing recon techniques.
 
