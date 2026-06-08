@@ -197,4 +197,4 @@ This tool is intended for **authorised security testing and educational use only
 
 ## License
 
-MIT License — see `LICENSE` for details.
+MIT License — see [LICENSE](https://github.com/Ameya343/Port-Scanner/blob/main/LICENSE) for details.
