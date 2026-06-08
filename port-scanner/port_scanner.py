@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 port_scanner.py — Multi-threaded TCP/UDP Port Scanner
-Personal Project | Python, socket, threading, argparse
+
 """
 
 import socket
